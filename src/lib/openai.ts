@@ -15,7 +15,7 @@ export interface MealAnalysis {
         video_search_term: string;
     }[];
     personalized_advice: string;
-    fact_attack: string; // New: Provocative fact-attack (팩폭)
+    fact_attack: string;
 }
 
 export async function analyzeMealImages(
@@ -23,7 +23,7 @@ export async function analyzeMealImages(
     profile: { age: string; gender: string },
     mealType: string
 ): Promise<MealAnalysis> {
-    const content: any[] = [
+    const content: OpenAI.Chat.Completions.ChatCompletionContentPart[] = [
         { type: "text", text: `${mealType} 식단을 분석해줘.` }
     ];
 

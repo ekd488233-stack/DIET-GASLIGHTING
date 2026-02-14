@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Upload, Calendar as CalendarIcon, Activity, Flame, User, PlayCircle, X, Zap, ChevronLeft } from 'lucide-react';
+import { Upload, Calendar as CalendarIcon, Flame, User, PlayCircle, X, Zap, ChevronLeft } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { analyzeMealImages, MealAnalysis } from './lib/openai';
 
